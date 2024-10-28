@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Relogio </title>
+
+    <link rel="stylesheet" href="Bom.css">
+    <link rel="icon" href="../aula1/img/relogio.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="cabeca">
+            <img class="miniimg" src="img/relogio.jpg" alt="">
+            <h1>Relogio</h1>
+            <img class="miniimg" src="img/relogio.jpg" alt="">
+        </div>
+    </header>
+    <section>
+        <div id="espaco.posicao">
+            <div class="espaco">
+                <p id="bom">.</p>
+                <img id="imagem" src="img/boatarde.jpg" alt="">
+
+            </div>
+        </div>
+    </section>
+    <footer> @Curso em vídeo</footer>
+
+    <script>
+
+        let img = document.getElementById('imagem')
+        let bom = document.getElementById('bom')
+       // let dataAtual = new Date();
+       // let hora = dataAtual.getHours();
+        let hora = prompt("Digite que horas são: ")
+        let body = document.body;
+
+        function verificarHora() {
+            if (hora >= 0 && hora < 12) {
+                bom.innerHTML = `Agora são exatamente ${hora} horas.`
+                img.src = 'img/Bom-dia-procêis-tudim.webp'
+                body.style.backgroundColor = 'lightblue';
+            } else if (hora >= 12 && hora < 18) {
+                bom.innerHTML = `Agora são exatamente ${hora} horas.`
+                img.src = 'img/boatarde.jpg'
+                body.style.backgroundColor = 'orange';
+            } else {
+                bom.innerHTML = `Agora são exatamente ${hora} horas.`
+                img.src = 'img/boanoite.jpg'
+                body.style.backgroundColor = 'darkslategray';
+            }
+        }
+
+        verificarHora();
+    </script>
+</body>
+
+</html>

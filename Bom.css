@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.espaco {
+    background-color: chocolate;
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    border-radius: 15%;
+ 
+}
+
+#espaco\.posicao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imagem {
+    width: 250px;
+    height: 250px;
+
+}
+
+.cabeca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miniimg{
+    width: 30px;
+    height: 30px;
+}
